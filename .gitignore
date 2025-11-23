@@ -3,3 +3,4 @@
 /INIT/*
 /PATH/*
 /SCRIPTS/*
+!**/.gitkeep
