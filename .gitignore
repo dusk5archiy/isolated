@@ -5,3 +5,4 @@
 /SCRIPTS/*
 /PACKAGES/*
 !**/.gitkeep
+/SETUP/MSYS2_DIR.txt
