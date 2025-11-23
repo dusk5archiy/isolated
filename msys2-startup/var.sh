@@ -14,7 +14,7 @@ for file in "$ISOLATED_DIR/INIT"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
-CUSTOM_PATH="$ISOLATED_DIR/scripts"
+CUSTOM_PATH="$ISOLATED_DIR/SCRIPTS:$ISOLATED_DIR/msys2-scripts"
 
 addpath() {
   local dir="$1"
