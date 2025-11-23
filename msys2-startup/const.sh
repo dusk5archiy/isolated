@@ -26,4 +26,7 @@ mkdir -p $USERPROFILE/AppData/Roaming/yazi/state
 export DESKTOP="$USERPROFILE/Desktop"
 mkdir -p $DESKTOP
 
+export APPS_DIR="$HOME/apps"
+mkdir -p $APPS_DIR
+
 export HOMEPATH=\\home

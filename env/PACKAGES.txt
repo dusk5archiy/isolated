@@ -1,3 +1,4 @@
+git
 mingw-w64-ucrt-x86_64-7zip
 mingw-w64-ucrt-x86_64-fd
 mingw-w64-ucrt-x86_64-fzf
