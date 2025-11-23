@@ -11,7 +11,7 @@
 - In the terminal, run these commands to install the essential packages:
 
 ```bash
-pacman -Syu         # Getting the latest updates
+pacman -Syu         # Getting the latest updates, run this TWICE
 msys2-packages.sh   # Install essential packages, this script is from $ISOLATED_DIR/msys2-scripts
 ```
 

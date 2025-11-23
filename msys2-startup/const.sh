@@ -29,6 +29,4 @@ mkdir -p $DESKTOP
 export APPS_DIR="$HOME/apps"
 mkdir -p $APPS_DIR
 
-touch $HOME/.gitconfig
-
 export HOMEPATH=\\home
