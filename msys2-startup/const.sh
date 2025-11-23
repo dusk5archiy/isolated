@@ -14,8 +14,8 @@ mkdir -p "$XDG_CACHE_HOME"
 export XDG_STATE_HOME=$HOME/.local/state
 mkdir -p "$XDG_STATE_HOME"
 
-export TMP="/$HOME_DRIVE_LETTER/tmp"
-export TEMP="/$HOME_DRIVE_LETTER/tmp"
+export TMP="$HOME/tmp"
+export TEMP="$HOME/tmp"
 mkdir -p "$TMP"
 
 export USERPROFILE="$HOME/profile"

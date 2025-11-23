@@ -7,5 +7,5 @@ done
 
 current_dir="$(pwd)"
 if [[ $current_dir == "/" || $current_dir == $ISOLATED_DIR || $current_dir == "/$SYSTEM_DRIVE_LETTER/Users/$(/usr/bin/whoami)" ]]; then
-  cd "/$SYSTEM_DRIVE_LETTER/Users/$(/usr/bin/whoami)/Desktop"
+  cd $DESKTOP
 fi

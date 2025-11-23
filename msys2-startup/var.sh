@@ -2,7 +2,15 @@ for file in "$ISOLATED_DIR/msys2-env"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
+for file in "$ISOLATED_DIR/ENV"/*.sh; do
+  [[ -f "$file" ]] && source "$file"
+done
+
 for file in "$ISOLATED_DIR/msys2-init"/*.sh; do
+  [[ -f "$file" ]] && source "$file"
+done
+
+for file in "$ISOLATED_DIR/INIT"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
@@ -14,6 +22,10 @@ addpath() {
 }
 
 for file in "$ISOLATED_DIR/msys2-path"/*.sh; do
+  [[ -f "$file" ]] && source "$file"
+done
+
+for file in "$ISOLATED_DIR/PATH"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
