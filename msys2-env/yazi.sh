@@ -1,0 +1,1 @@
+export YAZI_CONFIG_HOME="$LOCALAPPDATA/yazi"

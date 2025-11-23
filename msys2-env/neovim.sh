@@ -1,0 +1,1 @@
+export NVIM_CONFIG_DIR="$LOCALAPPDATA/nvim"

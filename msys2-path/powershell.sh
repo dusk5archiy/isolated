@@ -1,0 +1,1 @@
+addpath "/$SYSTEM_DRIVE_LETTER/Windows/System32/WindowsPowerShell/v1.0"

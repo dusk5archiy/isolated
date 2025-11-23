@@ -1,0 +1,1 @@
+pacman -S --needed - <$ISOLATED_DIR/env/PACKAGES.txt

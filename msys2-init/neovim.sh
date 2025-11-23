@@ -1,0 +1,1 @@
+mkdir -p $NVIM_CONFIG_DIR
