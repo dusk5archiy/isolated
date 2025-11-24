@@ -90,7 +90,7 @@ function M.getConfigs(other_configs)
 			-- selection_bg = "gray",
 
 			scrollbar_thumb = "red", -- the element that represent the current viewport
-			split = "red",
+			split = "white",
 
 			tab_bar = {
 				background = "none",
@@ -135,8 +135,8 @@ function M.getConfigs(other_configs)
 		-- },
 		keys = {
 			{
-				key = "|",
-				mods = "CTRL|SHIFT|ALT",
+				key = "_",
+				mods = "CTRL|SHIFT",
 				action = wezterm.action.SplitVertical,
 			},
 			{
