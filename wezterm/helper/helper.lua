@@ -1,6 +1,5 @@
 local wezterm = require("wezterm")
 local config_dir = wezterm.config_dir
-local HOME_DRIVE_LETTER = config_dir:match("^([A-Za-z]):")
 
 local M = {}
 
@@ -20,13 +19,13 @@ function M.getConfigs(other_configs)
 		window_background_image = config_dir .. "\\background\\desktop.jpg",
 		window_background_image_hsb = {
 			brightness = 0.02,
-			saturation = 0.0,
+			saturation = 0.5,
 		},
 		window_background_opacity = 0.7,
 		font_size = 9,
 		-- color_scheme = "Gruvbox dark, soft (base16)",
-		color_scheme = "Catppuccin Frappe",
-		set_environment_variables = { },
+		color_scheme = "Catppuccin Macchiato",
+		set_environment_variables = {},
 		force_reverse_video_cursor = true,
 		front_end = "WebGpu", -- "OpenGL" | "WebGpu" | "Software"
 		-- webgpu_power_preference = "LowPower",
