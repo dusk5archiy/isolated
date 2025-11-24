@@ -78,7 +78,6 @@ function M.getConfigs(other_configs)
 
 		win32_system_backdrop = "Acrylic", -- Acrylic, "Disable", "Mica", "Tabbed"
 
-		-- colors
 		colors = {
 			-- foreground = "silver",
 			-- background = "black",
@@ -89,7 +88,7 @@ function M.getConfigs(other_configs)
 			-- selection_fg = "silver",
 			-- selection_bg = "gray",
 
-			scrollbar_thumb = "red", -- the element that represent the current viewport
+			scrollbar_thumb = "red",
 			split = "white",
 
 			tab_bar = {
@@ -97,42 +96,35 @@ function M.getConfigs(other_configs)
 
 				active_tab = {
 					bg_color = "none",
-					fg_color = "#fff",
-					intensity = "Bold", -- [retro] Bold, Half, Normal
-					underline = "None", -- [retro] None, Single, Double
-					italic = false, -- [retro]
-					strikethrough = false, -- retro
+					fg_color = "white",
+					intensity = "Bold", -- [use_fancy_tab_bar == false] Bold, Half, Normal
+					underline = "None", -- [use_fancy_tab_bar == false] None, Single, Double
+					italic = false, -- [use_fancy_tab_bar == False]
+					strikethrough = false, -- [use_fancy_tab_bar == False]
 				},
 				inactive_tab = {
+					fg_color = "#aaa",
 					bg_color = "none",
-					fg_color = "#ddd",
+					italic = false, -- [use_fancy_tab_bar == false]
 				},
-				inactive_tab_edge_hover = "none",
 				inactive_tab_hover = {
 					fg_color = "#ddd",
 					bg_color = "none",
-					italic = false, -- [retro]
+					italic = true, -- [use_fancy_tab_bar == false]
 				},
-				inactive_tab_edge = "none",
+				inactive_tab_edge = "none", -- [use_fancy_tab_bar == true]
+				inactive_tab_edge_hover = "none", -- [use_fancy_tab_bar == true]
 				new_tab = {
 					fg_color = "#ddd",
 					bg_color = "none",
 				},
 				new_tab_hover = {
-					fg_color = "#ddd",
+					fg_color = "white",
 					bg_color = "none",
 				},
 			},
 		},
 		window_close_confirmation = "NeverPrompt",
-		-- -- both client and server must have wezterm
-		-- ssh_domains = {
-		-- 	{
-		-- 		name = "archserver",
-		-- 		remote_address = "192.168.159.132",
-		-- 		username = "generic",
-		-- 	},
-		-- },
 		keys = {
 			{
 				key = "_",
@@ -155,16 +147,6 @@ function M.getConfigs(other_configs)
 				action = wezterm.action.ShowLauncher,
 			},
 			{
-				key = "F6",
-				mods = "",
-				action = wezterm.action.AttachDomain("unix"),
-			},
-			{
-				key = "F6",
-				mods = "SHIFT",
-				action = wezterm.action.DetachDomain("CurrentPaneDomain"),
-			},
-			{
 				key = "h",
 				mods = "CTRL|SHIFT",
 				action = wezterm.action.ShowLauncherArgs({ flags = "DOMAINS" }),
@@ -179,6 +161,7 @@ function M.getConfigs(other_configs)
 				mods = "CTRL|SHIFT",
 				action = wezterm.action.ShowTabNavigator,
 			},
+			{ key = "l", mods = "CTRL|SHIFT", action = wezterm.action.Nop },
 			{
 				key = "F9",
 				mods = "",
@@ -205,11 +188,6 @@ function M.getConfigs(other_configs)
 			},
 			{ key = "UpArrow", mods = "SHIFT", action = wezterm.action.ScrollByLine(-1) },
 			{ key = "DownArrow", mods = "SHIFT", action = wezterm.action.ScrollByLine(1) },
-			{
-				key = "i",
-				mods = "CTRL|SHIFT",
-				action = wezterm.action.DisableDefaultAssignment,
-			},
 		},
 		mouse_bindings = {
 			{
@@ -220,7 +198,6 @@ function M.getConfigs(other_configs)
 			{
 				event = { Down = { streak = 1, button = "Left" } },
 				mods = "CTRL",
-				-- action = wezterm.action.Nop,
 				action = wezterm.action.DisableDefaultAssignment,
 			},
 		},
