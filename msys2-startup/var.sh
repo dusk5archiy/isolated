@@ -2,7 +2,7 @@ for file in "$ISOLATED_DIR/msys2-env"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
-for file in "$ISOLATED_DIR/ENV"/*.sh; do
+for file in "$ISOLATED_DIR/custom-env"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
@@ -10,11 +10,11 @@ for file in "$ISOLATED_DIR/msys2-init"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
-for file in "$ISOLATED_DIR/INIT"/*.sh; do
+for file in "$ISOLATED_DIR/custom-init"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
-CUSTOM_PATH="$ISOLATED_DIR/SCRIPTS:$ISOLATED_DIR/msys2-scripts"
+CUSTOM_PATH="$ISOLATED_DIR/custom-scripts:$ISOLATED_DIR/msys2-scripts"
 
 addpath() {
   local dir="$1"
@@ -25,7 +25,7 @@ for file in "$ISOLATED_DIR/msys2-path"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
-for file in "$ISOLATED_DIR/PATH"/*.sh; do
+for file in "$ISOLATED_DIR/custom-path"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
 
@@ -33,7 +33,3 @@ export PATH="$CUSTOM_PATH:$PATH"
 
 unset addpath
 unset CUSTOM_PATH
-
-for file in "$ISOLATED_DIR/auto-scripts"/*.sh; do
-  [[ -f "$file" ]] && source "$file"
-done
