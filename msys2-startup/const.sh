@@ -21,8 +21,6 @@ mkdir -p "$TMP"
 export USERPROFILE="$HOME/profile"
 mkdir -p "$USERPROFILE"
 
-mkdir -p $USERPROFILE/AppData/Roaming/yazi/state
-
 export DESKTOP="$USERPROFILE/Desktop"
 mkdir -p $DESKTOP
 

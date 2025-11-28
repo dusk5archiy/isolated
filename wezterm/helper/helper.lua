@@ -16,6 +16,8 @@ function M.getConfigs(other_configs)
 		initial_rows = 70,
 		initial_cols = 300,
 
+		adjust_window_size_when_changing_font_size = false,
+
 		window_background_image = config_dir .. "\\background\\desktop.jpg",
 		window_background_image_hsb = {
 			brightness = 0.02,
@@ -204,6 +206,12 @@ function M.getConfigs(other_configs)
 		launch_menu = {
 			{
 				args = { "cmd" },
+			},
+		},
+		unix_domains = {
+			{
+				name = "unix",
+				socket_path = config_dir .. "\\..\\SOCK\\sock",
 			},
 		},
 	}

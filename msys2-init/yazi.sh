@@ -1,4 +1,5 @@
 mkdir -p "$YAZI_CONFIG_HOME"
+mkdir -p $USERPROFILE/AppData/Roaming/yazi/state
 
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
@@ -7,4 +8,3 @@ function y() {
   [ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
   rm -f -- "$tmp"
 }
-

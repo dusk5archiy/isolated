@@ -4,5 +4,6 @@
 /PATH/*
 /SCRIPTS/*
 /PACKAGES/*
+/SOCK/*
 !**/.gitkeep
 /SETUP/MSYS2_DIR.txt
