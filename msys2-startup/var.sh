@@ -1,3 +1,11 @@
+export APPS_DIR="$HOME/apps"
+mkdir -p $APPS_DIR
+
+mkdir -p $CUSTOM_SETTINGS_DIR/env
+mkdir -p $CUSTOM_SETTINGS_DIR/init
+mkdir -p $CUSTOM_SETTINGS_DIR/scripts
+mkdir -p $CUSTOM_SETTINGS_DIR/path
+
 for file in "$ISOLATED_DIR/env"/*.sh; do
   [[ -f "$file" ]] && source "$file"
 done
