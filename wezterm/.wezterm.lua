@@ -4,5 +4,5 @@ local config_dir = wezterm.config_dir
 local helper = dofile(config_dir .. "/helper/helper.lua")
 
 return helper.getConfigs({
-	default_prog = { "cmd.exe", "/c", config_dir .. "\\..\\open-msys2.cmd" },
+	default_prog = { "cmd.exe", "/c", config_dir .. "\\..\\run.cmd" },
 })
