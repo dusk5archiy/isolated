@@ -43,7 +43,6 @@ Create SSH keys (for Github):
 ```bash
 # These scripts are all from $ISOLATED_DIR/msys2-scripts
 new-ssh.sh          # Create a new SSH key
-activate-ssh.sh     # Adding it to the SSH agent
 copy-ssh.sh         # Copy the public key to the clipboard
 ```
 
