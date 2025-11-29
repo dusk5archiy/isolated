@@ -211,7 +211,7 @@ function M.getConfigs(other_configs)
 		unix_domains = {
 			{
 				name = "unix",
-				socket_path = config_dir .. "\\..\\SOCK\\sock",
+				socket_path = config_dir .. "\\..\\var\\sock",
 			},
 		},
 	}
