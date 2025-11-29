@@ -44,7 +44,6 @@ mv "$TEMP_DIR/extracted/" "$INSTALL_DIR"
 echo "Cleaning up..."
 rm -rf "$TEMP_DIR"
 
-echo 'addpath $APPS_DIR/code/bin' >$ISOLATED_DIR/PATH/code.sh
+echo 'addpath $APPS_DIR/code/bin' >$CUSTOM_SETTINGS_DIR/path/code.sh
 
 echo "VS Code has been updated successfully."
-
