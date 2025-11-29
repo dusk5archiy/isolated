@@ -22,6 +22,7 @@ call set HOME=%HOME%
 set "PROFILE_FILE=%MSYS2_DIR%\etc\profile"
 
 echo export ISOLATED_DIR=$(/usr/bin/cygpath "%CWD%") > %PROFILE_FILE%
+echo export W_ISOLATED_DIR="%CWD%" >>%PROFILE_FILE%
 echo export CUSTOM_SETTINGS_DIR=$(/usr/bin/cygpath "%CUSTOM_SETTINGS_DIR%") >>%PROFILE_FILE%
 echo export HOME=%HOME% >>%PROFILE_FILE%
 echo source $ISOLATED_DIR/etc/profile >>%PROFILE_FILE%

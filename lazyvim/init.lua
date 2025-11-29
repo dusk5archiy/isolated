@@ -5,11 +5,9 @@ if vim.g.vscode then
 	return
 end
 
-local ISOLATED_DIR = os.getenv("W_ISOLATED_DIR")
+local W_ISOLATED_DIR = os.getenv("W_ISOLATED_DIR")
 
-if ISOLATED_DIR then
-	package.path = package.path .. ";" .. ISOLATED_DIR .. "\\lazyvim\\lua\\?.lua"
-else
-	package.path = package.path .. ";" .. "/mnt/i/windows/nvim/lua/?.lua"
+if W_ISOLATED_DIR then
+	package.path = package.path .. ";" .. W_ISOLATED_DIR .. "\\lazyvim\\lua\\?.lua"
+	require("config.lazy")
 end
-require("config.lazy")
