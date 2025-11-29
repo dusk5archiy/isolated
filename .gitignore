@@ -1,9 +1,4 @@
 /wezterm/background/*
-/custom-env/*
-/custom-init/*
-/custom-path/*
-/custom-scripts/*
-/custom-packages/*
-/custom-sock/*
+/var/env/*
+/var/sock/*
 !**/.gitkeep
-/SETUP/MSYS2_DIR.txt
