@@ -2,7 +2,7 @@
 
 # Install
 #
-# pacman -Syu cygrunsrv mingw-w64-ucrt-x86_64-editrights
+# pacman -Syu cygrunsrv
 
 # The log file will be /var/log/msys2_sshd.log
 # The SSH service should start automatically when Windows is rebooted. You can
